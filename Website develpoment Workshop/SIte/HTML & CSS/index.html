@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+	<head>
+		<!--- Site Title--->
+		<title>Personal Site</title>
+		
+		<!--- SEO -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+		<!--- FontAwsome CDN -->
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+
+		<!--Google Font -->
+			<!--- Montserrat ( Content ) --->
+			<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+			
+			<!---Pacifico ( Heading ) -->
+			<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		
+		<!--- Header Sectin --->
+		<div class="header">
+			<a class="logo" href="#">
+				<img src="img/logo/Site_Logo.png" width="100" height="100" alt="Siddhant Sunil Joshi" class="img-thumbnail">
+			</a>
+			<ul class="header_list">
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#about">ABOUT ME</a></li>
+				<li><a href="#skill">SKILL</a></li>
+				<li><a href="#project">PROJECTS</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>	
+		</div>	
+
+		<!-- Hero Section-->
+		<section>
+			<div class="hero" id="home" >
+				<div>
+					<h1>Siddhant Sunil Joshi</h1>
+					<hr>
+					<center>
+						<h2>
+							<p>
+								Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+							</p>
+						</h2>
+					</center>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Portfolio Section-->
+		<section>
+			<!-- About Section ---> 
+			<div class="about" id="about">
+				<div class="about_info">
+					<h2>About myself</h2>
+					<hr>
+					<h4>
+						<br>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+					</h4>
+				</div>
+				<!-- Image Section-->
+				<div class="about_img">
+					<img src="img/myImage/Siddhant Joshi.gif" alt="Siddhant Joshi" >
+				</div>
+			</div>
+		</section>
+		
+		<!-- Skill setion with progress bar -->
+		<section  id="skill">
+			<div class="skill">
+				<center>
+					<h2>Skill Set</h2>
+					<hr>
+				</center>
+			</div>
+			<div class="container">
+				<p>HTML</p> 
+				<div class="progress_bar" id="html"> 
+					<div class="progress">80%</div> 
+				</div>
+				<p>CSS</p> 
+				<div class="progress_bar" id="css"> 
+					<div class="progress">85%</div> 
+				</div>
+				<p>PHP</p> 
+				<div class="progress_bar" id="php"> 
+					<div class="progress">23%</div> 
+				</div>
+				<p>Android</p> 
+				<div class="progress_bar" id="android"> 
+					<div class="progress">50%</div> 
+				</div>
+
+			</div>	
+		</section>
+		
+		<!-- Project Section-->
+		<section class="project" id="project">
+			<center>
+				<h2>Projects</h2>
+				<h4>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h4>
+				<hr>
+			</center>
+			
+			<div class="project_info">
+				<ul>
+					<li>
+						<div class="image">
+							<img src="img/project/Handy.png" alt="Handy">
+						</div>
+						<div class="project_1_info">
+							<p><strong>Handy</strong></p>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>		
+		
+		<!-- Contact Me section -->
+		<section class="contact" id="contact">
+			<center>
+				<h2>CONTACT</h2>
+				<h4>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h4>
+			</center>
+			<div class="container">
+				<form action="action_page.php">
+					<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+					<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					<label for="country">Country</label>
+						<select id="country" name="country">
+						<option value="australia">Australia</option>
+						<option value="canada">Canada</option>
+						<option value="usa">USA</option>
+					</select>
+					<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+					<input type="submit" value="Submit">
+
+				</form>
+			</div>
+
+		</section>
+		<!--- Footo Section r--->
+		<section>
+			<footer class="footer">
+				<h2>
+					<a href="#home">
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+					<p>Made With Love By<a target="new" href="https://siddhantsuniljoshi.000webhostapp.com/"> Siddhant Joshi</a>
+					</p>
+				</h2>
+			</footer>
+		</section>
+	</body>
+</html>>
